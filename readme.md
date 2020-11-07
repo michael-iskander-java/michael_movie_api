@@ -19,7 +19,7 @@ https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US&p
 
 
 # Steps to install & run
-1. Clone this repository inside a newly created folder in the folder 'htdocs' in XAMPP.
+1. Clone this repository inside the folder 'htdocs' in XAMPP.
 2. Open phpMyAdmin and create a new database (e.g. 'movie_seeder').
 3. In .env file add the name of the jusct created databse in the attribute, 'DB_DATABASE'.
 4. In .env add configurations for the frequency of seeding the movies (name of the attribute 'MOVIES_SEEDER_FREQUENCY'), number of the required seeded top rated movies (name of the attribute 'TOP_RATED_MOVIES_NO'), and  number of the required seeded upcoming movies (name of the attribute 'UPCOMING_MOVIES_NO').
