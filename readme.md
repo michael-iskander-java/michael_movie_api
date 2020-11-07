@@ -7,7 +7,9 @@ XAMPP for Windows 7.2.34, Laravel 5.8 Framework, and guzzlehttp/guzzle package.
 We retrieve the data from the below three services:
 
 https://api.themoviedb.org/3/genre/movie/list?api_key=<<api_key>>&language=en-US
+
 https://api.themoviedb.org/3/movie/top_rated?api_key=<<api_key>>&language=en-US&page=1
+
 https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US&page=1
 
 
