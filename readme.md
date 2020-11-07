@@ -4,7 +4,7 @@ XAMPP for Windows 7.2.34, Laravel 5.8 Framework, and guzzlehttp/guzzle package.
 # Features
 1. Seeder for the top rated, and upcoming movies along with movies' genres from The Movie DB (https://www.themoviedb.org) with a configurable frequency and configuration for the no. of seeded movies for both top rated and upcoming movies, and store the seeded data in database.
 
-We retrieve the data from the below three services:
+We seed the data from the below three services:
 
 https://api.themoviedb.org/3/genre/movie/list?api_key=<<api_key>>&language=en-US
 
@@ -14,7 +14,7 @@ https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US&p
 
 
 
-2. An API endpoint `/public/movies` to list all the movies from the database with the ability to filter by the genre and sort the movies list according to the popularity, vote average, and vote rate. We will use the following URLs:
+2. An API endpoint `/public/movies` to list all the movies from the database with the ability to filter them by the genre and sort the movies list according to the popularity, vote average, and vote rate. We will use the following URLs:
 
 /public/movies?genre=war (We retrieve movies by the genre)
 
@@ -35,7 +35,7 @@ https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US&p
 
 4. Create a new file '.env' in the folder 'michael_movie_api' and copy the content of the '.env.example' in it.
 
-5. In .env file add the name of the jusct created databse in the attribute, 'DB_DATABASE'.
+5. In .env file add the name of the just created databse in the attribute, 'DB_DATABASE'.
 
 6. In .env add configurations for the frequency of seeding the movies (name of the attribute 'MOVIES_SEEDER_FREQUENCY'), number of the required seeded top rated movies (name of the attribute 'TOP_RATED_MOVIES_NO'), and  number of the required seeded upcoming movies (name of the attribute 'UPCOMING_MOVIES_NO').
 
@@ -45,7 +45,7 @@ https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US&p
 
 9. After that, run the command 'php artisan schedule:run' to force running the scheduler.
 
-10. Open phpMyAdmin and you will find the retrieved data stored in the database.
+10. Open phpMyAdmin and you will find the seeded data stored in the database.
 
 11. Start testing API by the following URLs:
 
